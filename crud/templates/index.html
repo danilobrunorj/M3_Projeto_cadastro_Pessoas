@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Create Read Update Delete</title>
+</head>
+<body>
+    <h1>Bem vindos ao meu CRUD</h1>
+    <ul>
+        {% for pessoa in pessoas %}
+            <li>{{pessoa.id}} - {{pessoa.nome}} - {{pessoa.idade}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
